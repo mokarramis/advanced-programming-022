@@ -1,8 +1,16 @@
 public class Wallet {
     private int credit=0;
 
+    public Wallet (int credit){
+        this.credit = credit ;
+    }
+
     public int getCredit() {
         return credit;
+    }
+
+    public void setCredit(int credit) {
+        this.credit = credit ;
     }
 
     // public void deposit(){}
