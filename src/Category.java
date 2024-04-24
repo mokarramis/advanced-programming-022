@@ -4,4 +4,6 @@ public enum Category {
     GPU,
     FOOD,
     CLOTHES,
+    BOOK,
+    PHONE,
 }

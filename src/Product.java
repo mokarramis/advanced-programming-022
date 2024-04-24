@@ -4,10 +4,13 @@ public class Product {
     private String name, size, price;
     private List<Category> categories = new ArrayList<Category>();
     private ArrayList<Product> allProducts;
-    public Product(String name, String size, String price, List<Category> categories){
+    Category category ;
+    public Product(String name, String size, String price, List<Category> categories , Category category){
         this.name = name;
         this.size = size;
         this.price = price;
+        // added by Alireza Sobhdoost
+        this.category = category ;
         this.categories = addCategoties(categories);
         allProducts = new ArrayList<>();
         allProducts.add(this);
@@ -37,5 +40,9 @@ public class Product {
     }
     public List<Category> getCategories() {
         return categories;
+    }
+
+    public String toString() {
+        return  this.name ;
     }
 }
