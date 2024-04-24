@@ -13,6 +13,9 @@ public class Wallet {
         this.credit = credit ;
     }
 
+    public String toString () {
+        return String.valueOf(credit) ;
+    }
     // public void deposit(){}
 
     // public void withdraw(){}
